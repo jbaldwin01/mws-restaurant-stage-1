@@ -279,10 +279,30 @@ nav h1 a {
   position: relative;
   width: 100%;
 }
-#reviews-list li p {
+/* #reviews-list li p {
   margin: 0 0 10px;
+} */
+#reviews-name {
+  background-color: black;
+  color: white;
+  padding: 1em;
 }
-
+#reviews-date {
+  background-color: black;
+  color: gray;
+  float: right;
+}
+#reviews-rating {
+  background-color: orange;
+  color: white;
+  /* width: 25%; */
+  display: inline;
+  padding: .25em 1em .25em;
+  margin: 1em;
+}
+#reviews-comments {
+  margin: 1em;
+}
 #restaurant-hours {
   max-width: 470px;
 }

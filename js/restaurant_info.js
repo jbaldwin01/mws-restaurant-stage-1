@@ -150,32 +150,23 @@ fillReviewsHTML = (reviews = self.restaurant.reviews) => {
 createReviewHTML = (review) => {
   const li = document.createElement('li');
   const name = document.createElement('p');
-  name.style.backgroundColor = 'black';
-  name.style.color = 'white';
-  name.style.padding = '1em';
+  name.id = 'reviews-name';
   name.innerHTML = review.name;
   
   const date = document.createElement('span');
-  date.style.backgroundColor = 'black';
-  date.style.color = 'gray';
-  date.style.float = 'right';
+  date.id = 'reviews-date';
   date.innerHTML = review.date;
   name.appendChild(date);
   li.appendChild(name);
 
   const rating = document.createElement('p');
+  rating.id = 'reviews-rating';
   rating.innerHTML = `Rating: ${review.rating}`;
-  rating.style.backgroundColor = 'orange';
-  rating.style.color = 'white';
-  rating.style.width = '25%';
-  rating.style.display = 'inline';
-  rating.style.padding = '.25em 1em .25em';
-  rating.style.margin = '1em';
   li.appendChild(rating);
 
   const comments = document.createElement('p');
+  comments.id = 'reviews-comments';
   comments.innerHTML = review.comments;
-  comments.style.margin = '1em';
   li.appendChild(comments);
 
   return li;
