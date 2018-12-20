@@ -160,9 +160,8 @@ nav h1 a {
   background-color: #ccc;
   display: block;
   margin: 0;
-  max-width: 100%;
-  min-height: 248px;
-  min-width: 100%;
+  width: 100%;
+  height: auto;
 }
 #restaurants-list li h1 {
   color: #f18200;
@@ -229,6 +228,7 @@ nav h1 a {
 #restaurant-img {
   max-width: 470px;
   width: 80%;
+  height: auto;
 }
 #restaurant-address {
   font-size: 14pt;
